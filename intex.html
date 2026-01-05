@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Judo de Gonesse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        #horaires {
+            display: none;
+            margin-top: 10px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+        .fil-actualites li {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Club de Judo de Gonesse</h1>
+</header>
+
+<section>
+    <h2>Nos Professeurs</h2>
+    <ul>
+        <li>Jean Dupont</li>
+        <li>Marie Leblanc</li>
+        <li>Hugo Martin</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Palmarès</h2>
+    <ul>
+        <li>Championnat régional 2025: 1ère place</li>
+        <li>Tournoi de Paris 2024: 2ème place</li>
+        <li>Open de France 2023: 3ème place</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Horaires des cours</h2>
+    <button onclick="afficherHoraires()">Voir les horaires</button>
+    <div id="horaires">
+        <ul>
+            <li>Lundi: 18h - 20h</li>
+            <li>Mercredi: 17h - 19h</li>
+            <li>Vendredi: 18h - 20h</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Téléphone: 01 23 45 67 89</p>
+    <p>Email: contact@judogonesse.fr</p>
+</section>
+
+<section>
+    <h2>Fil d'Actualités</h2>
+    <ul class="fil-actualites">
+        <li>01/01/2026: Jean Dupont a remporté le tournoi local.</li>
+        <li>02/12/2025: Marie Leblanc a décroché la médaille d'or au championnat régional.</li>
+        <li>15/11/2025: Hugo Martin a participé à l'Open de Paris.</li>
+    </ul>
+</section>
+
+<script>
+    function afficherHoraires() {
+        const horaires = document.getElementById('horaires');
+        if (horaires.style.display === 'none') {
+            horaires.style.display = 'block';
+        } else {
+            horaires.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
